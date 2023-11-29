@@ -8,6 +8,9 @@ app = Flask(__name__)
 def index():
     return jsonify({"Choo Choo": "Welcome to your Flask app 🚅"})
 
+@app.route('/public')
+def public():
+    return 'For Public'
 
 if __name__ == '__main__':
     app.run(debug=True, port=os.getenv("PORT", default=5000))
