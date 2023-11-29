@@ -21,7 +21,7 @@ def index():
 def public():
     return 'For Public'
 
-@app.route('/api/pdop', methods=['GET'])
+@app.route('/api/pdop')
 def calculate_pdop():
     # Balizas
     B1 = np.array([0, 0, 3.05])
