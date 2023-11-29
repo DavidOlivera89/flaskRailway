@@ -8,10 +8,11 @@ from flask_cors import CORS, cross_origin
 import json
 import numpy as np
 from scipy.linalg import inv
+import sys
 
 app = Flask(__name__)
 
-
+print(sys.version)
 @app.route('/')
 def index():
     return jsonify({"Choo Choo": "Welcome to your Flask app 🚅"})
